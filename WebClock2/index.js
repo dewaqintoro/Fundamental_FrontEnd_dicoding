@@ -8,5 +8,5 @@ const updateTime = () => {
   displayTime();
   setTimeout(updateTime, 1000)
 };
-
+ 
 updateTime();
