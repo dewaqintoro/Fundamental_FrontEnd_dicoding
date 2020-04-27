@@ -11,14 +11,14 @@ form.addEventListener('submit', e=>{
   if(!searchValue){
     alert('tidak ada lirik yang dicari')
   }else{
-    searchSong(searchValue)
+    cariLagu(searchValue)
     
   }
 })
 
 
 // pencarian lagu
-async function searchSong(searchValue){
+async function cariLagu(searchValue){
   // alert(searchValue)
   
   const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`);
@@ -28,7 +28,6 @@ async function searchSong(searchValue){
 }
 
 // update DOM
-
 function showData(data){
   result.innerHTML =`
   <ul class="song-list">
@@ -39,7 +38,7 @@ function showData(data){
       </strong> -${song.title}
       </div>
         <span data-artist="${song.artist.name}" data-songtitle="${song.title}">
-          <b>Pilih</b>
+          Lirik
         </span>
         </li>
   `).join('')

@@ -2,6 +2,7 @@
 @import "footer.css";
 @import "search.css";
 @import "result.css";
+@import "toTop.css";
 
 *{
     padding: 0%;
