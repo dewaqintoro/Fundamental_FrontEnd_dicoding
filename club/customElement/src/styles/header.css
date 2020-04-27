@@ -6,4 +6,6 @@ header{
     position: relative;
   }
 
-  
+.ndas{
+  max-width: 500px;
+}

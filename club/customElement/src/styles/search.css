@@ -1,8 +1,8 @@
-form{
+/* form{
   position: relative;
   display: flex;
   width: 500px;
-}
+} 
 
 input{
   width: 100%;
@@ -14,7 +14,7 @@ input{
   outline: none;
 }
 
-button{
+#btnCari{
   width: 100px;
   max-width: 100%;
   background: #303952;
@@ -27,8 +27,32 @@ button{
   top: 2px;
   font-weight: 600;
   outline: none;
+  cursor: pointer;
 }
 
-button:hover{
+#btnCari:hover{
+  transform: scale(0.96);
+} */
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+div.card-body.row.no-gutters.align-items-center{
+  padding: 0px;
+}
+
+.btn-lg.btn-cari{
+  padding: 4px 14px;
+  margin-right: 5px;
+}
+
+.btn-lg.btn-cari:hover{
   transform: scale(0.96);
 }
