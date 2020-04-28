@@ -1,19 +1,16 @@
 const apiURL = 'https://api.lyrics.ovh';
+const result = document.getElementById('favqu');
 
-
-async function laguFav(){
-  // alert(searchValue)
+async function justin(){
   
-  const searchResult = await fetch(`${apiURL}/suggest/wali`);
+  const searchResult = await fetch(`${apiURL}/suggest/Justin Bieber -Yummy`);
   const data = await searchResult.json();
-
-  // console.log(data)
   tampilLaguFav(data)
 }
 
 function tampilLaguFav(data){
   result.innerHTML =`
-  <ul class="song-list">
+  <ul class="">
   ${data.data.map(song=> `<li>
     <div>
       <strong>
@@ -29,4 +26,6 @@ function tampilLaguFav(data){
   </ul>`
 }
 
-export default laguFav();
+module.exports = {
+  justin: justin()
+};

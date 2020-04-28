@@ -7,7 +7,7 @@ function navbar() {
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="src/page/about.html">Features</a>
     </div>
   </div>
 </nav>`;

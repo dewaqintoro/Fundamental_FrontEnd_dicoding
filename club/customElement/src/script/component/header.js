@@ -26,8 +26,7 @@ class AppBar extends HTMLElement {
                                 <!--end of col-->
                             </div>
         </div>
-        
-        <button onclick="laguFav()">Try it</button>`;
+        `;
     }
 }
 
