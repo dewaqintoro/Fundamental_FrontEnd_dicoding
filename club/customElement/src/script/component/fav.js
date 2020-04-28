@@ -29,4 +29,4 @@ function tampilLaguFav(data){
   </ul>`
 }
 
-// window.uclicked = laguFav();
+export default laguFav();

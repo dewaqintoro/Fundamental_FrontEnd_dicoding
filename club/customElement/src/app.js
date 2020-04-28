@@ -7,6 +7,7 @@ import "./script/component/footer.js";
 import "./script/component/toTop.js";
 import "./script/component/fav.js";
 import "./script/data/lyrics.js";
-import main from "./script/view/main.js";
+// import main from "./script/view/main.js";
+// import laguFav from "./script/component/fav.js";
  
-document.addEventListener("DOMContentLoaded", main);
+// document.addEventListener("DOMContentLoaded", main);
