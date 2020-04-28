@@ -5,8 +5,8 @@ class AppBar extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <div class="container">
-            <br/>
+        <div class="container container1">
+        <h1>Pencarian Lirik Lagu</h1>
           <div class="row justify-content-center">
                                 <div class="col-12 col-md-10 col-lg-8">
                                     <form class="card card-sm" id="form">
@@ -17,7 +17,7 @@ class AppBar extends HTMLElement {
                                             </div>
                                             <!--end of col-->
                                             <div class="col-auto">
-                                                <button class="btn btn-lg btn-success btn-cari" type="submit">Cari</button>
+                                                <button class="btn btn-lg btn-secondary btn-cari" type="submit">Cari</button>
                                             </div>
                                             <!--end of col-->
                                         </div>

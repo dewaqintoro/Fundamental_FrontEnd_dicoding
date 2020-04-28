@@ -28,6 +28,10 @@
     letter-spacing: 2px;
     text-align: center;
   }
+
+  .kotak{
+    background: grey;
+  }
   
   @media only screen and (max-width: 600px) {
     /* form{

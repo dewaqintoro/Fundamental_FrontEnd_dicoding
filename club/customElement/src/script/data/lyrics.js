@@ -24,20 +24,21 @@ async function cariLagu(searchValue){
   const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`);
   const data = await searchResult.json();
 
-  showData(data)
+  tampilData(data)
 }
 
 // update DOM
-function showData(data){
+function tampilData(data){
   result.innerHTML =`
   <ul class="song-list">
   ${data.data.map(song=> `<li>
-    <div>
+    <div class="hasil">
+    <img src="${song.artist.picture}">
       <strong>
         ${song.artist.name}
       </strong> -${song.title}
       </div>
-        <span data-artist="${song.artist.name}" data-songtitle="${song.title}">
+        <span data-id="${song.artist.id}" data-artist="${song.artist.name}" data-songtitle="${song.title}">
           Lirik
         </span>
         </li>
@@ -66,13 +67,17 @@ async function getLyrics(artist, songTitle){
 
   const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
   const data = await res.json();
+  // console.log(data);
 
   const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>');
 
-result.innerHTML= `<h2><strong>
-                    ${artist}
-                    </strong>-${songTitle}
-                  </h2>
-                  <p>${lyrics}</p>
-                  `
+result.innerHTML= `
+<div>
+</div>
+<h2><strong>
+${artist}
+</strong>-${songTitle}
+</h2>
+<p>${lyrics}</p>
+`
 }

@@ -26,6 +26,7 @@ function tampilLaguFav(data){
   </ul>`
 }
 
-module.exports = {
-  justin: justin()
-};
+// module.exports = {
+//   justin: justin()
+// };
+export {justin}
