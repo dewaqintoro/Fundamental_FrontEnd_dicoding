@@ -1,3 +1,4 @@
+// import
 class AppBar extends HTMLElement {
     connectedCallback(){
         this.render();
@@ -13,7 +14,7 @@ class AppBar extends HTMLElement {
                                         <div class="card-body row no-gutters align-items-center">
                                             <!--end of col-->
                                             <div class="col">
-                                                <input id="search" class="form-control form-control-lg form-control-borderless" type="search" placeholder="cari lagu">
+                                                <input id="inputCari" class="form-control form-control-lg form-control-borderless" type="search" placeholder="cari lagu">
                                             </div>
                                             <!--end of col-->
                                             <div class="col-auto">
@@ -30,4 +31,4 @@ class AppBar extends HTMLElement {
     }
 }
 
-customElements.define("app-bar", AppBar);
+customElements.define("ndas-1", AppBar);

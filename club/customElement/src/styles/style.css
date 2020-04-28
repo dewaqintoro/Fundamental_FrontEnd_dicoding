@@ -29,10 +29,6 @@
     text-align: center;
   }
 
-  .kotak{
-    background: grey;
-  }
-  
   @media only screen and (max-width: 600px) {
     /* form{
       width: 300px;
@@ -44,4 +40,8 @@
       text-align: center;
       font-size: 30px;
     }
+  }
+
+  audio{
+    width: 190px;
   }

@@ -1,4 +1,4 @@
-.result{
+.hasilCari{
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -6,7 +6,7 @@
   margin-bottom: 100px
 }
 
-.song-list{
+.daftar-lagu{
   list-style: none;
   width: 60%;
   display: flex;
@@ -19,7 +19,7 @@
   margin-bottom: 60px;
 }
 
-.song-list li{
+.daftar-lagu li{
   margin-bottom: 20px;
   width: 100%;
   justify-content: space-evenly;
@@ -29,7 +29,7 @@
   /* background: grey; */
 }
 
-.song-list li::after{
+.daftar-lagu li::after{
   content: "";
   position: absolute;
   right: -20px;
@@ -39,10 +39,10 @@
   background: #5785aa;
   display: inline-block;
 }
-.song-list li div{
+.daftar-lagu li div{
   float: left;
 }
-.song-list li span{
+.daftar-lagu li span{
   float: right;
   background-color: #0c2461;
   border: none;
